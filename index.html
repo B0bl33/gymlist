@@ -3,58 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Gym Workout Tracker</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Workout Programs</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Gym Progress</h1>
+        <h1>Gym Workout Tracker</h1>
     </header>
-
     <main>
-        <section class="workout-list">
-            <h2>PUSH</h2>
-            <ul>
-                <li>Bench Press/Dumbell Press<button class="complete-btn"></button></li>
-                <li>Weighted Tricep Dips<button class="complete-btn"></button></li>
-                <li>Shoulder Press/Military Press<button class="complete-btn"></button></li>
-                <li>Lateral Raises<button class="complete-btn"></button></li>
-                <li>Rope Extensions/Push Ups/Cables<button class="complete-btn"></button></li>
+        <section class="workout-list" id="push">
+            <h2 class="jumping">Push Day</h2>
+            <ul id="push-list">
+                <!-- List items will be added here -->
             </ul>
-            
+            <button class="add-exercise-btn" onclick="addExercise('push')">Add Exercise</button>
         </section>
-        <section class="workout-list">
-            <h2>PULL</h2>
-            <ul>
-                <li>Weighted Pull Ups/Chin Ups<button class="complete-btn"></button></li>
-                <li>Deadlifts/Bent Over Rows<button class="complete-btn"></button></li>
-                <li>Lat Pull Downs/Seated Rows<button class="complete-btn"></button></li>
-                <li>Bent over Flys<button class="complete-btn"></button></li>
-                <li>Bicep Curls<button class="complete-btn"></button></li>
+        <section class="workout-list" id="pull">
+            <h2 class="jumping">Pull Day</h2>
+            <ul id="pull-list">
+                <!-- List items will be added here -->
             </ul>
-         
+            <button class="add-exercise-btn" onclick="addExercise('pull')">Add Exercise</button>
         </section>
-        <section class="workout-list">
-            <h2>LEGS</h2>
-            <ul>
-                <li>Squats/Leg Press<button class="complete-btn"></button></li>
-                <li>Leg Extensions<button class="complete-btn"></button></li>
-                <li>Leg Curls<button class="complete-btn"></button></li>
-                <li>Single Leg Squats<button class="complete-btn"></button></li>
-                <li>Calf Raises<button class="complete-btn"></button></li>
+        <section class="workout-list" id="legs">
+            <h2 class="jumping">Leg Day</h2>
+            <ul id="legs-list">
+                <!-- List items will be added here -->
             </ul>
-           
+            <button class="add-exercise-btn" onclick="addExercise('legs')">Add Exercise</button>
         </section>
     </main>
-    
-
-
-
-
-
+    <button class="clear-all-btn" onclick="clearAllProgress()">Clear All Progress</button>
     <script src="workout.js"></script>
 </body>
 </html>
