@@ -1,2 +1,2 @@
 # gymlist
-Simple to-do style list using a smidge of jQuery
+Gym Progress Tracker
